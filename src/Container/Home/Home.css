@@ -19,22 +19,21 @@
 
 .profit{
   height: 33vh;
-  background-color: aqua;
   margin: auto;
+  border: 1px solid black;
 
 }
 
 .graph{
   height: 33vh;
   margin: auto;
-
+  border: 1px solid black;
 }
 
 .dates{
   height: 33vh;
-  background-color: blue;
   margin: auto;
-
+  border: 1px solid black;
 }
 
 
@@ -50,7 +49,6 @@
   .profit{
     height: 30vh;
     width: 100%;
-    background-color: aqua;
     margin: auto;
 
   }

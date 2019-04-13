@@ -1,0 +1,9 @@
+.profit{
+  width: 100%;
+  text-align: center;
+}
+
+.text{
+  display: inline-block; 
+  margin: 2px auto;
+}

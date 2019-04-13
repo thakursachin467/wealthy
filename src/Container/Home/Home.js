@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Calender from '../../Components/Calender/Calender';
 import './Home.css';
 import Graph from '../../Components/Graph/Graph';
-
-
+import Profit from '../../Components/Profit/Profit';
+import Dates from '../../Components/Dates/Dates';
 class Home extends Component {
   constructor(props) {
     super(props)
@@ -75,7 +75,6 @@ class Home extends Component {
   }
   handleSelect = ({ start, end }) => {
     const price = window.prompt('Enter Share Price')
-    console.log(price);
     if (price) {
       const newData = {
         id: this.state.data[this.state.data.length - 1].id + 1,
@@ -96,12 +95,13 @@ class Home extends Component {
         </div>
         <div className='rightPannel'>
           <div className='profit'>
-
+            <Profit data={this.state.data} />
           </div>
           <div className='graph'>
             <Graph data={this.state.data} />
           </div>
           <div className='dates'>
+            <Dates data={this.state.data} />
           </div>
         </div>
       </div>
