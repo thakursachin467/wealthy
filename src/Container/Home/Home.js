@@ -77,7 +77,7 @@ class Home extends Component {
     const price = window.prompt('Enter Share Price')
     if (price) {
       const newData = {
-        id: this.state.data[this.state.data.length - 1].id + 1,
+        id: this.state.data.length > 0 ? this.state.data[this.state.data.length - 1].id + 1 : 1,
         title: `Rs. ${price}`,
         price: price,
         start: new Date(start),
